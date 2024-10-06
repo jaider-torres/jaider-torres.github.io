@@ -22,13 +22,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Jaider Daniel TOrres"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Campinas, Brazil"
+  employer         : "State University of Campinas"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "j241343@dac.unicamp.br" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
