@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Jaider Daniel Torres"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  # bio              : "Short biography for the left-hand sidebar"
   location         : "Campinas, Brazil"
   employer         : "State University of Campinas"
   uri              : # URL
