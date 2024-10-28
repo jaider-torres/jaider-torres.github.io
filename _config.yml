@@ -21,7 +21,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Foto 3x4.jpg"
+  avatar           : "Foto3x4.jpg"
   name             : "Jaider Daniel Torres"
   pronouns         : # example: "she/her"  
   # bio              : "Short biography for the left-hand sidebar"
