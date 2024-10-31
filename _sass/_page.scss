@@ -1,5 +1,5 @@
-/* ========================================================================== 
-   SINGLE PAGE/POST 
+/* ==========================================================================
+   SINGLE PAGE/POST
    ========================================================================== */
 
 #main {
@@ -49,6 +49,7 @@
 }
 
 .page__content {
+
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
@@ -73,11 +74,9 @@
 
   a {
     text-decoration: underline;
-    color: #4b0082; // Change link color
 
     &:hover {
       text-decoration: underline;
-      color: #3b0072; // Darker on hover
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
@@ -221,6 +220,7 @@
   text-transform: uppercase;
 }
 
+
 /*
    Page meta
    ========================================================================== */
@@ -245,6 +245,7 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
 
 /*
    Page taxonomy
@@ -274,6 +275,7 @@
     color: $link-color-hover;
   }
 }
+
 
 /*
    Comments
@@ -369,6 +371,7 @@
     text-decoration: none;
   }
 }
+
 
 /*
    Related
