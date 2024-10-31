@@ -51,7 +51,6 @@
   }
 }
 
-
 /*
    Post pagination navigation links
    ========================================================================== */
@@ -83,7 +82,8 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: mix(#fff, $gray, 25%);
+      color: #ffffff; // Changed to white for better visibility
+      background: #4b0082; // Changed to your preferred theme color
       border: 1px solid $light-gray;
       border-radius: 0;
 
@@ -92,7 +92,7 @@
       }
 
       &.current {
-        color: #fff;
+        color: #ffffff;
         background: $primary-color;
       }
 
@@ -131,7 +131,8 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: mix(#fff, $gray, 50%);
+    color: #ffffff; // Changed to white for better visibility
+    background: #4b0082; // Changed to your preferred theme color
     border: 1px solid $light-gray;
     border-radius: $border-radius;
 
@@ -167,7 +168,6 @@
   border-top: 1px solid $border-color;
 }
 
-
 /*
    Priority plus navigation
    ========================================================================== */
@@ -181,7 +181,7 @@
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
-    color: $masthead-link-color;
+    color: #ffffff; // Changed to white for better visibility
     text-decoration: none;
 
     &:hover {
@@ -310,12 +310,10 @@
   }
 }
 
-
 /*
    Navigation list
    ========================================================================== */
 
-/* Navigation list styles */
 .nav__list {
   font-size: 1.25rem;
 
@@ -326,11 +324,10 @@
   a {
     display: block;
     padding: 0.125em 0;
-    color: #fff; // Change text color to white
+    color: #ffffff; // Changed to white for better visibility
 
     &:hover {
       text-decoration: underline;
-      color: #e0e0e0; // Optional: Change hover color to a lighter shade for contrast
     }
   }
 
@@ -338,62 +335,16 @@
     margin-left: -0.5em;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    color: #fff; // Keep active text color white
+    color: #ffffff; // Changed to white for better visibility
     font-weight: bold;
-    background: #4b0082; // Change background to your desired color for active links
+    background: #4b0082; // Changed to your preferred theme color
     border-radius: $border-radius;
 
     &:hover {
-      color: #fff; // Keep hover color for active links white
+      color: #ffffff;
     }
   }
 }
-
-/* Adjust styles for the greedy navigation, if applicable */
-.greedy-nav {
-  // Existing styles...
-
-  button {
-    background-color: #4b0082; // Change button background to your desired color
-    color: #fff; // Set button text color to white
-    // Other existing styles...
-  }
-
-  a {
-    color: #4b0082; // Change link color in greedy navigation to match the theme
-
-    &:hover {
-      color: #000; // Change hover color for better visibility
-    }
-  }
-
-  // Other existing styles...
-}
-
-/* Pagination button styles */
-.pagination {
-  // Existing styles...
-
-  li {
-    a {
-      color: #4b0082; // Change pagination link color to your theme color
-      border: 1px solid #4b0082; // Change border to match your theme
-
-      &:hover {
-        color: #fff; // Optional: Change hover color for pagination links
-        background: #4b0082; // Optional: Add background color on hover
-      }
-
-      &.current {
-        color: #fff; // Keep current link text color white
-        background: $primary-color; // Adjust to your desired active color
-      }
-
-      // Other existing styles...
-    }
-  }
-}
-
 
 .nav__title {
   margin: 0;
@@ -401,6 +352,8 @@
   font-family: $sans-serif-narrow;
   font-size: $type-size-5;
   font-weight: bold;
+  color: #ffffff; // Changed to white for better visibility
+  background: #4b0082; // Changed to your preferred theme color
 }
 
 .nav__sub-title {
@@ -412,72 +365,31 @@
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 1px solid $border-color;
+  color: #ffffff; // Changed to white for better visibility
 }
-
 
 /*
    Table of contents navigation
    ========================================================================== */
 
 .toc {
-  font-family: $sans-serif-narrow;
-  color: $gray;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background-color: #fff;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
-
-  .nav__title {
-    color: #fff;
-    font-size: $type-size-6;
-    background: $primary-color;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
-  }
-}
-
-.toc__menu {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  background: $background-color;
 
   a {
     display: block;
-    padding: 0.5rem 1rem;
-    color: $gray;
-    font-size: $type-size-7;
-    font-weight: bold;
-    line-height: 1.5;
-    border-bottom: 1px solid $border-color;
-    text-decoration-line: none !important;
+    padding: 0.5rem;
+    color: #ffffff; // Changed to white for better visibility
+    text-decoration: none;
 
     &:hover {
-      color: #000;
-      background: $lighter-gray;
+      text-decoration: underline;
     }
   }
 
-  > li:last-child {
-    a {
-      border-bottom: none;
-    }
-  }
-
-  li ul > li a {
-    padding-left: 2rem;
-    font-weight: normal;
-  }
-
-  /* hide sub sub links on small screens*/
-  li > ul li {
-    display: none;
-
-    @include breakpoint($medium) {
-      display: block;
-    }
+  .active {
+    font-weight: bold;
+    color: #ffffff; // Changed to white for better visibility
+    background: #4b0082; // Changed to your preferred theme color
   }
 }
