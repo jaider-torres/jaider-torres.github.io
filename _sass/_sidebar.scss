@@ -6,36 +6,56 @@
    Default
    ========================================================================== */
 
-/* Sidebar styles */
 .sidebar {
-  background: #4b0082; // Change sidebar background color to match your theme
-  color: #fff; // Set text color to white for better contrast
-  padding: 1em; // Add padding for spacing
+  -webkit-transform: translate3d(0, 0 , 0);
+          transform: translate3d(0, 0 , 0);
 
-  // Links within the sidebar
-  a {
-    color: #fff; // Set link color to white
-    text-decoration: none; // Remove underline
+  @include clearfix();
+  margin-bottom: 1em;
+  background-color: #4b0082; // Changed sidebar background to your preferred theme color
+
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    height: 100vh;
+    overflow-y: auto;               // Add scrollbar if the sidebar is too long
+    position: fixed;
+    padding-top: $masthead-height;
+  }
+
+  @include breakpoint($large) {
+    @include span(2 of 12);
+    opacity: 1;
+    -webkit-transition: opacity 0.2s ease-in-out;
+            transition: opacity 0.2s ease-in-out;
 
     &:hover {
-      color: #e0e0e0; // Optional: Lighten color on hover for visibility
-      text-decoration: underline; // Optional: Underline on hover for emphasis
+      opacity: 1;
     }
   }
 
-  // Any specific sections within the sidebar
-  .sidebar-section {
-    margin-bottom: 1em; // Add space between sections
-    padding: 0.5em; // Add padding for section content
+  @include breakpoint($x-large) {
+    max-width: $sidebar-link-max-width;
+    padding-right: 0;
+  }
 
-    h3 {
-      color: #fff; // Header color for sections
-      font-weight: bold;
-    }
+  h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    font-family: $sans-serif;
+    color: #ffffff; // Changed header text color to white for better visibility
+  }
 
-    p {
-      color: #e0e0e0; // Set paragraph color to a lighter shade for readability
-    }
+  h3, h4 {
+    font-size: $type-size-5;
+  }
+
+  p, li {
+    font-family: $sans-serif;
+    font-size: $type-size-6;
+    line-height: 1.5;
+    color: #ffffff; // Changed paragraph and list item text color to white
+  }
+
+  img {
+    width: 100%;
   }
 }
 
@@ -109,7 +129,7 @@
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
-  color: #4b0082;  // Change author name color
+  color: #ffffff; // Changed author name color to white
 }
 
 .sidebar .author__desktop {
@@ -174,7 +194,7 @@
   list-style-type: none;
   border: 1px solid $border-color;
   border-radius: $border-radius;
-  background: #fff;
+  background: #4b0082; // Changed background color to your preferred theme color
   z-index: -1;
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
@@ -233,13 +253,12 @@
     padding-right: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
-    color: inherit;
+    color: #ffffff; // Changed link color to white for better visibility
     font-size: $type-size-5;
     text-decoration: none;
 
     &:hover {
       text-decoration: underline;
-      color: #4b0082;  // Change link hover color
     }
   }
 }
