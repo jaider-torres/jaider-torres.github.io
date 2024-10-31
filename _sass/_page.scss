@@ -37,7 +37,6 @@
 .page__title {
   margin-top: 0;
   line-height: 1;
-  color: #4b0082; /* Change title color */
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -47,7 +46,6 @@
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
-  color: #4b0082; /* Change lead text color */
 }
 
 .page__content {
@@ -55,7 +53,6 @@
   h2 {
     padding-bottom: 0.5em;
     border-bottom: 1px solid $border-color;
-    color: #4b0082; /* Change h2 color */
   }
 
   p, li, dl {
@@ -77,7 +74,6 @@
 
   a {
     text-decoration: underline;
-    color: #4b0082; /* Change link color */
 
     &:hover {
       text-decoration: underline;
