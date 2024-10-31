@@ -2,12 +2,12 @@
    SINGLE PAGE/POST
    ========================================================================== */
 
-$main-color: #4b0082; /* Primary color */
-$light-main-color: #8a2be2; /* Light shade for accents */
-$dark-main-color: #3c003f; /* Dark shade for borders and shadows */
-$border-color: $dark-main-color;
-$lighter-gray: #f5f5f5; /* Light gray for backgrounds */
-$gray: #ccc; /* Gray for text and borders */
+$main-color: #4b0082; // Main purple color
+$light-purple: lighten($main-color, 20%); // Lighter shade for backgrounds and accents
+$dark-purple: darken($main-color, 20%); // Darker shade for text and borders
+$border-color: $light-purple; // Border color
+$link-color: $main-color; // Link color
+$link-color-hover: $dark-purple; // Link hover color
 
 #main {
   @include container;
@@ -44,6 +44,7 @@ $gray: #ccc; /* Gray for text and borders */
 .page__title {
   margin-top: 0;
   line-height: 1;
+  color: $main-color; // Set title color
 
   & + .page__meta {
     margin-top: -0.5em;
@@ -53,16 +54,19 @@ $gray: #ccc; /* Gray for text and borders */
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
+  color: $main-color; // Set lead color
 }
 
 .page__content {
   h2 {
     padding-bottom: 0.5em;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $border-color; // Border under h2
+    color: $main-color; // Set h2 color
   }
 
   p, li, dl {
     font-size: 1em;
+    color: $dark-purple; // Set paragraph color
   }
 
   /* paragraph indents */
@@ -80,10 +84,11 @@ $gray: #ccc; /* Gray for text and borders */
 
   a {
     text-decoration: underline;
-    color: $main-color;
+    color: $link-color; // Set link color
 
     &:hover {
       text-decoration: underline;
+      color: $link-color-hover; // Set hover link color
 
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
@@ -95,12 +100,14 @@ $gray: #ccc; /* Gray for text and borders */
     margin-top: 1em;
     font-family: $sans-serif;
     font-weight: bold;
+    color: $main-color; // Set dt color
   }
 
   dd {
     margin-left: 1em;
     font-family: $sans-serif;
     font-size: $type-size-6;
+    color: $dark-purple; // Set dd color
   }
 
   .small {
@@ -131,7 +138,6 @@ $gray: #ccc; /* Gray for text and borders */
     background-position: center;
     animation: intro 0.3s both;
     animation-delay: 0.25s;
-    background-color: rgba($main-color, 0.7); /* Overlay color */
 
     a {
       color: #fff;
@@ -183,9 +189,10 @@ $gray: #ccc; /* Gray for text and borders */
   color: #fff;
   font-family: $caption-font-family;
   font-size: $type-size-7;
-  background: rgba($dark-main-color, 0.5); /* Dark overlay for caption */
+  background: $dark-purple; // Set caption background color
   text-align: right;
   z-index: 5;
+  opacity: 0.8; // Adjust opacity for better visibility
   border-radius: $border-radius 0 $border-radius 0;
 
   @include breakpoint($large) {
@@ -225,7 +232,9 @@ $gray: #ccc; /* Gray for text and borders */
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+  color: $main-color; // Set share title color
 }
+
 
 /*
    Page meta
@@ -250,7 +259,9 @@ $gray: #ccc; /* Gray for text and borders */
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+  color: $main-color; // Set meta title color
 }
+
 
 /*
    Page taxonomy
@@ -272,14 +283,14 @@ $gray: #ccc; /* Gray for text and borders */
   margin-bottom: 8px;
   padding: 5px 10px;
   text-decoration: none;
-  border: 1px solid $light-main-color; /* Lighter border for taxonomy items */
-  border-radius: $border-radius;
+  border: 1px solid $light-gray; // Maintain border color
 
   &:hover {
     text-decoration: none;
-    color: $link-color-hover;
+    color: $link-color-hover; // Set hover color
   }
 }
+
 
 /*
    Comments
@@ -296,6 +307,7 @@ $gray: #ccc; /* Gray for text and borders */
   font-size: $type-size-6;
   border-top: 1px solid $border-color;
   text-transform: uppercase;
+  color: $main-color; // Set comments title color
 }
 
 .page__comments-form {
@@ -364,41 +376,24 @@ $gray: #ccc; /* Gray for text and borders */
 
   a {
     text-decoration: none;
+    color: $main-color; // Set author link color
   }
 }
 
 .comment__date {
-  @extend .page__meta;
-  margin: 0;
-
-  a {
-    text-decoration: none;
-  }
-}
-
-/*
-   Related
-   ========================================================================== */
-
-.page__related {
-  margin-top: 2em;
-  padding-top: 1em;
-  border-top: 1px solid $border-color;
-  @include clearfix();
-  float: left;
-
-  @include breakpoint($large) {
-    @include pre(2.5 of 12);
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-}
-
-.page__related-title {
-  margin-bottom: 10px;
+  @include font-regular();
   font-size: $type-size-6;
-  text-transform: uppercase;
+  color: $dark-purple; // Set comment date color
+}
+
+.comment__body {
+  margin-top: 0.5em;
+  font-size: $type-size-6;
+  color: $dark-purple; // Set comment body color
+}
+
+.comment__reply-link {
+  margin-top: 0.5em;
+  font-size: $type-size-6;
+  color: $link-color; // Set reply link color
 }
