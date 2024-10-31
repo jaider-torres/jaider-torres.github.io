@@ -53,6 +53,7 @@
 
   img {
     width: 100%;
+    height: auto; // Maintain aspect ratio for 4:3 images
   }
 }
 
