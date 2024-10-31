@@ -126,7 +126,7 @@
     animation-delay: 0.25s;
 
     a {
-      color: #6e45a1;
+      color: #fff;
     }
 
     .wrapper {
@@ -142,7 +142,7 @@
     .page__meta,
     .page__lead,
     .btn {
-      color: #6e45a1;
+      color: #fff;
       text-shadow: 1px 1px 4px rgba(#000, 0.5);
     }
 
@@ -172,7 +172,7 @@
   right: 0;
   margin: 0 auto;
   padding: 2px 5px;
-  color: #6e45a1;
+  color: #fff;
   font-family: $caption-font-family;
   font-size: $type-size-7;
   background: #000;
@@ -186,7 +186,7 @@
   }
 
   a {
-    color: #6e45a1;
+    color: #fff;
     text-decoration: none;
   }
 }
@@ -227,7 +227,7 @@
 
 .page__meta {
   margin-top: 2em;
-  color: mix(#6e45a1, $black, 25%);
+  color: mix(#fff, $black, 25%);
   font-family: $sans-serif;
   font-size: $type-size-6;
 
