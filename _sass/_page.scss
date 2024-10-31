@@ -27,35 +27,10 @@
     @include full();
 
     .page__content,
-    .page__meta {
-  margin-top: 2em;
-  color: mix(#4b0082, $gray, 25%); // Use a mix with your gray variable for a softer tone
-  font-family: $sans-serif;
-  font-size: $type-size-6;
-
-  p {
-    margin: 0;
-  }
-
-  a {
-    color: inherit;
-  }
-},
-    
-   .page__share {
-  margin-top: 2em;
-  padding-top: 1em;
-  border-top: 1px solid mix(#4b0082, $border-color, 50%); // Use a mix for the border color
-
-  .btn {
-    background-color: #4b0082; // Button background
-    color: #fff;
-    &:hover {
-      background-color: #3b0072; // Darker on hover
+    .page__meta,
+    .page__share {
+      @include full();
     }
-  }
-}
-     
   }
 }
 
@@ -98,11 +73,11 @@
   }
 
   a {
+    text-decoration: underline;
 
-      color: #4b0082; // Change link color
-  &:hover {
-     color: #3b0072; // A slightly darker shade for hover
-  
+    &:hover {
+      text-decoration: underline;
+
       img {
         box-shadow: 0 0 10px rgba(#000, 0.25);
       }
@@ -133,8 +108,6 @@
 }
 
 .page__hero {
-  background-color: rgba(75, 0, 130, 0.7); // Semi-transparent purple for hero sections
-  border: 1px solid mix(#4b0082, $border-color, 50%); // Border for page sections
   position: relative;
   margin-bottom: 2em;
   @include clearfix;
@@ -228,13 +201,16 @@
   border-top: 1px solid $border-color;
 
   @include breakpoint(max-width $small) {
-    .btn {
-  background-color: #008080;
-  color: #fff;
-  &:hover {
-    background-color: #005555;
-  }
-}
+    .btn span {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
   }
 }
 
@@ -286,7 +262,6 @@
 }
 
 .page__taxonomy-item {
- border: 1px solid mix(#4b0082, $light-gray, 25%); // Lighter border for taxonomy items
   display: inline-block;
   margin-right: 5px;
   margin-bottom: 8px;
