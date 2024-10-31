@@ -9,7 +9,6 @@
   height: $masthead-height;
   top: 0;
   width: 100%;
-
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
@@ -32,12 +31,12 @@
 
     a {
       text-decoration: none;
+      color: inherit; /* Inherit color from parent to maintain consistency */
     }
   }
 }
 
 .masthead__menu {
-
   ul {
     margin: 0;
     padding: 0;
@@ -54,5 +53,11 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+  }
+
+  // Add hover effect to menu items
+  &:hover {
+    background: lighten($border-color, 40%); /* Lighten background on hover */
+    border-radius: 4px; /* Optional: Add border-radius for a softer look */
   }
 }
