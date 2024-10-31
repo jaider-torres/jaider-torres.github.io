@@ -7,7 +7,7 @@
    ========================================================================== */
 
 .btn {
-  /* default button */
+  /* Default button styles */
   display: inline-block;
   margin-bottom: 0.25em;
   padding: 0.5em 1em;
@@ -21,9 +21,10 @@
   border: 0 !important;
   border-radius: $border-radius;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
 
   &:hover {
-    background-color: mix(white, #000, 20%);
+    background-color: mix(white, #000, 20%); /* Darken background on hover */
   }
 
   .icon {
@@ -31,11 +32,10 @@
   }
 
   .icon + .hidden {
-    margin-left: -0.5em; /* override for hidden text*/
+    margin-left: -0.5em; /* Override for hidden text */
   }
 
-  /* fills width of parent container */
-
+  /* Fills width of parent container */
   &--block {
     display: block;
     width: 100%;
@@ -45,11 +45,10 @@
     }
   }
 
-  /* for dark backgrounds */
-
+  /* Styles for dark backgrounds */
   &--inverse {
     color: $gray !important;
-    border: 1px solid $light-gray !important; /* override*/
+    border: 1px solid $light-gray !important; /* Override for border */
     background-color: #fff;
 
     &:hover {
@@ -58,15 +57,13 @@
     }
   }
 
-  /* light outline */
-
+  /* Light outline style */
   &--light-outline {
-    border: 1px solid #fff !important; /* override*/
+    border: 1px solid #fff !important; /* Override for border */
     background-color: transparent;
   }
 
-  /* information */
-
+  /* Information button style */
   &--info {
     background-color: $info-color;
 
@@ -75,8 +72,7 @@
     }
   }
 
-  /* warning */
-
+  /* Warning button style */
   &--warning {
     background-color: $warning-color;
 
@@ -85,8 +81,7 @@
     }
   }
 
-  /* success */
-
+  /* Success button style */
   &--success {
     background-color: $success-color;
 
@@ -95,8 +90,7 @@
     }
   }
 
-  /* danger */
-
+  /* Danger button style */
   &--danger {
     background-color: $danger-color;
 
@@ -105,8 +99,7 @@
     }
   }
 
-  /* disabled */
-
+  /* Disabled button style */
   &--disabled {
     pointer-events: none;
     cursor: not-allowed;
@@ -115,13 +108,8 @@
     opacity: 0.65;
   }
 
-  /* social buttons */
-
-  $social:
-  (facebook, $facebook-color),
-  (twitter, $twitter-color),
-  (google-plus, $google-plus-color),
-  (linkedin, $linkedin-color);
+  /* Social buttons styles */
+  $social: (facebook, $facebook-color), (twitter, $twitter-color), (google-plus, $google-plus-color), (linkedin, $linkedin-color);
 
   @each $socialnetwork, $color in $social {
     &--#{$socialnetwork} {
@@ -133,20 +121,17 @@
     }
   }
 
-  /* extra large button */
-
+  /* Extra large button style */
   &--x-large {
     font-size: $type-size-4;
   }
 
-  /* large button */
-
+  /* Large button style */
   &--large {
     font-size: $type-size-5;
   }
 
-  /* small button */
-
+  /* Small button style */
   &--small {
     font-size: $type-size-7;
   }
