@@ -4,9 +4,9 @@
 
 %tab-focus {
   /* Default*/
-  outline: thin dotted $warning-color;
+  outline: thin dotted #4b0082; // Changed to purple tone
   /* Webkit*/
-  outline: 5px auto $warning-color;
+  outline: 5px auto #4b0082; // Changed to purple tone
   outline-offset: -2px;
 }
 
@@ -17,7 +17,6 @@
 @function em($target, $context: $doc-font-size) {
   @return ($target / $context) * 1em;
 }
-
 
 /*
    Bourbon clearfix
