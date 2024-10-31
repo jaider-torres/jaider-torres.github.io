@@ -1,5 +1,5 @@
-/* ==========================================================================
-   SIDEBAR
+/* ========================================================================== 
+   SIDEBAR 
    ========================================================================== */
 
 /*
@@ -12,7 +12,6 @@
 
   @include clearfix();
   margin-bottom: 1em;
-  background-color: #4b0082; // Changed sidebar background to your preferred theme color
 
   @media screen and (min-width: $sidebar-screen-min-width) {
     height: 100vh;
@@ -39,8 +38,7 @@
 
   h2, h3, h4, h5, h6 {
     margin-bottom: 0;
-    font-family: $sans-serif;
-    color: #ffffff; // Changed header text color to white for better visibility
+    font-family: $sans-serif-narrow;
   }
 
   h3, h4 {
@@ -51,7 +49,6 @@
     font-family: $sans-serif;
     font-size: $type-size-6;
     line-height: 1.5;
-    color: #ffffff; // Changed paragraph and list item text color to white
   }
 
   img {
@@ -126,10 +123,10 @@
     margin-bottom: 10px;
   }
 }
+
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
-  color: #ffffff; // Changed author name color to white
 }
 
 .sidebar .author__desktop {
@@ -194,7 +191,7 @@
   list-style-type: none;
   border: 1px solid $border-color;
   border-radius: $border-radius;
-  background: #4b0082; // Changed background color to your preferred theme color
+  background: #fff;
   z-index: -1;
   box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
@@ -253,7 +250,7 @@
     padding-right: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
-    color: #ffffff; // Changed link color to white for better visibility
+    color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
 
