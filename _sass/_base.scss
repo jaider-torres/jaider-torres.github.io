@@ -1,5 +1,5 @@
-/* ==========================================================================
-   BASE ELEMENTS
+/* ========================================================================== 
+   BASE ELEMENTS 
    ========================================================================== */
 html {
   /* sticky footer fix */
@@ -11,9 +11,10 @@ body {
   margin: 0;
   padding: $masthead-height 0 0;
   padding-bottom: 9em;
-  color: $text-color;
+  color: #333; /* Set a contrasting text color */
   font-family: $global-font-family;
   line-height: 1.5;
+  background-color: #f4f4f4; /* Light background for contrast */
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -26,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
+  color: #4b0082; /* Apply the preferred tone to headers */
 }
 
 h1 {
@@ -59,12 +61,13 @@ small, .small {
 
 p {
   margin-bottom: 1.3em;
+  color: #555; /* Slightly darker text for better readability */
 }
 
 u,
 ins {
   text-decoration: none;
-  border-bottom: 1px solid $text-color;
+  border-bottom: 1px solid #4b0082; /* Underline decoration using preferred tone */
   a {
     color: inherit;
   }
@@ -87,7 +90,7 @@ abbr[title],
 abbr[data-original-title] {
   text-decoration: none;
   cursor: help;
-  border-bottom: 1px dotted $text-color;
+  border-bottom: 1px dotted #4b0082; /* Dotted underline in preferred tone */
 }
 
 /* blockquotes */
@@ -97,7 +100,7 @@ blockquote {
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
-  border-left: 0.25em solid $primary-color;
+  border-left: 0.25em solid #4b0082; /* Left border in preferred tone */
 
   cite {
     font-style: italic;
@@ -112,6 +115,8 @@ blockquote {
 /* links */
 
 a {
+  color: #4b0082; /* Link color using preferred tone */
+
   &:focus {
     @extend %tab-focus;
   }
@@ -119,6 +124,7 @@ a {
   &:hover,
   &:active {
     outline: 0;
+    color: darken(#4b0082, 10%); /* Darken on hover */
   }
 }
 
@@ -129,7 +135,7 @@ tt, code, kbd, samp, pre {
 }
 
 pre {
-  overflow-x: auto; /* add scrollbars to wide code blocks*/
+  overflow-x: auto; /* add scrollbars to wide code blocks */
 }
 
 p > code,
@@ -140,14 +146,14 @@ td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   font-size: $type-size-6;
-  background: $code-background-color;
-  border: 1px solid $lighter-gray;
+  background: #eaeaea; /* Lighter background for code */
+  border: 1px solid #ccc;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
   &:before, &:after {
     letter-spacing: -0.2em;
-    content: "\00a0"; /* non-breaking space*/
+    content: "\00a0"; /* non-breaking space */
   }
 }
 
@@ -157,7 +163,7 @@ hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid #4b0082; /* Horizontal rule in preferred tone */
 }
 
 /* lists */
@@ -236,14 +242,14 @@ figure {
 
 figcaption {
   margin-bottom: 0.5em;
-  color: mix(#fff, $text-color, 25%);
+  color: mix(#fff, #4b0082, 25%); /* Caption color in a lighter tone of preferred */
   font-family: $caption-font-family;
   font-size: $type-size-6;
 
   a {
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 1px solid #ccc; /* Lighter border for links in captions */
     -webkit-transition: $global-transition;
     transition: $global-transition;
 
@@ -254,13 +260,11 @@ figcaption {
   }
 }
 
-
 /* Fix IE9 SVG bug */
 
 svg:not(:root) {
   overflow: hidden;
 }
-
 
 /*
    Navigation lists
@@ -291,6 +295,7 @@ nav {
 
   a {
     text-decoration: none;
+    color: #4b0082; /* Navigation link color in preferred tone */
   }
 
   /* override white-space for nested lists */
