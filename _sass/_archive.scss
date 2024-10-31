@@ -1,245 +1,185 @@
 /* ==========================================================================
-   ARCHIVE
+   COLOR VARIABLES
    ========================================================================== */
+$primary-color: #4b0082; // Your primary color
+$text-color: #333333; // Text color
+$background-color: #ffffff; // Background color
+$code-background-color: #f7f7f7; // Background color for code blocks
+$lighter-gray: #d3d3d3; // Light gray color
+$border-color: #cccccc; // Border color
+$global-font-family: 'Arial, sans-serif'; // Example font
+$header-font-family: 'Georgia, serif'; // Example header font
+$type-size-6: 1rem; // Example text size
+$global-transition: 0.3s ease; // Example transition
+$border-radius: 4px; // Example border radius
 
-.archive {
-  margin-bottom: 2em;
+/* ==========================================================================
+   BASE ELEMENTS
+   ========================================================================== */
+html {
+  position: relative;
+  min-height: 100%;
+}
 
-  @include breakpoint($medium) {
-    @include span(12 of 12);
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 9em;
+  color: $text-color;
+  font-family: $global-font-family;
+  line-height: 1.5;
+  background-color: $background-color; // Set body background color
+
+  &.overflow--hidden {
+    overflow: hidden;
   }
+}
 
-  @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-  }
+h1, h2, h3, h4, h5, h6 {
+  margin: 2em 0 0.5em;
+  line-height: 1.2;
+  font-family: $header-font-family;
+  font-weight: bold;
+  color: $primary-color; // Set heading color
+}
 
+h1 {
+  margin-top: 0;
+  font-size: 2rem; // Adjust as needed
+}
+
+h2 {
+  font-size: 1.75rem; // Adjust as needed
+}
+
+h3 {
+  font-size: 1.5rem; // Adjust as needed
+}
+
+h4 {
+  font-size: 1.25rem; // Adjust as needed
+}
+
+h5 {
+  font-size: 1.1rem; // Adjust as needed
+}
+
+h6 {
+  font-size: 1rem; // Adjust as needed
+}
+
+small, .small {
+  font-size: $type-size-6;
+}
+
+p {
+  margin-bottom: 1.3em;
+  color: $text-color; // Set paragraph color
+}
+
+u,
+ins {
+  text-decoration: none;
+  border-bottom: 1px solid $text-color;
   a {
-    text-decoration: underline;
+    color: inherit;
+  }
+}
 
-    &:hover {
-      text-decoration: underline;
+del a {
+  color: inherit;
+}
 
-      img {
-        box-shadow: 0 0 10px rgba(#000, 0.25);
-      }
+/* Printing styles for orphans and widows */
+p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
+  orphans: 3;
+  widows: 3;
+}
+
+/* Abbreviations */
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: none;
+  cursor: help;
+  border-bottom: 1px dotted $text-color;
+}
+
+/* Blockquotes */
+blockquote {
+  margin: 2em 1em 2em 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-style: italic;
+  border-left: 0.25em solid $primary-color;
+  color: $text-color; // Set blockquote text color
+
+  cite {
+    font-style: italic;
+
+    &:before {
+      content: "\2014";
+      padding-right: 5px;
     }
   }
 }
 
-.archive__subtitle {
-  margin: 1.414em 0 0;
-  padding-bottom: 0.5em;
-  font-size: $type-size-5;
-  color: mix(#fff, $gray, 25%);
-  border-bottom: 1px solid $border-color;
+/* Links */
+a {
+  color: $primary-color; // Set link color
+  &:focus {
+    outline: 0;
+  }
 
-  + .list__item .archive__item-title {
-    margin-top: 0.5em;
+  &:hover,
+  &:active {
+    color: darken($primary-color, 10%); // Darken link color on hover
   }
 }
 
-.archive__item-title {
-  margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
-
-  a + a {
-    opacity: 0.5;
-  }
+/* Code Styles */
+tt, code, kbd, samp, pre {
+  font-family: 'Courier New', monospace; // Example monospace font
 }
 
-/* remove border*/
-.page__content {
-
-  .archive__item-title {
-    margin-top: 1em;
-    border-bottom: none;
-  }
+pre {
+  overflow-x: auto; /* Add scrollbars to wide code blocks */
+  background: $code-background-color; // Set background color for code blocks
+  color: $text-color; // Set code text color
+  padding: 1em; // Add padding
 }
 
-.archive__item-excerpt {
-  margin-top: 0;
-  font-size: $type-size-6;
-
-  & + p {
-    text-indent: 0;
-  }
+/* Horizontal Rule */
+hr {
+  display: block;
+  margin: 1em 0;
+  border: 0;
+  border-top: 1px solid $border-color;
 }
 
-.archive__item-teaser {
-  border-radius: $border-radius;
-  overflow: hidden;
+/* Lists */
+ul li,
+ol li {
+  margin-bottom: 0.5em;
+}
+
+/* Figures and Images */
+figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 2em 0;
+
   img {
     width: 100%;
+    border-radius: $border-radius;
+    transition: $global-transition;
   }
 }
 
-.archive__item:hover {
-  .archive__item-teaser {
-    box-shadow: 0 0 10px rgba(#000, 0.25);
-  }
-
-  .archive__item-title {
-    text-decoration: underline;
-  }
-}
-
-
-/*
-   List view
-   ========================================================================== */
-
-.list__item {
-  @include breakpoint($medium) {
-    padding-right: $right-sidebar-width-narrow;
-  }
-
-  @include breakpoint($large) {
-    padding-right: $right-sidebar-width;
-  }
-
-  @include breakpoint($x-large) {
-    padding-right: $right-sidebar-width-wide;
-  }
-
-  .page__meta {
-    margin: 0 0 4px;
-  }
-}
-
-
-/*
-   Grid view
-   ========================================================================== */
-
-.grid__item {
-  margin-bottom: 2em;
-
-  .page__meta {
-    margin: 0 0 4px;
-  }
-
-  .archive__item-title {
-    margin-top: 0.5em;
-    font-size: $type-size-5;
-  }
-
-  .archive__item-excerpt {
-    display: none;
-  }
-
-  @include breakpoint($small) {
-    @include gallery(5 of 10);
-    .archive__item-teaser {
-      max-height: 200px;
-    }
-  }
-
-  @include breakpoint($medium) {
-    margin-left: 0; /* reset before mixin does its thing*/
-    margin-right: 0; /* reset before mixin does its thing*/
-    @include gallery(2.5 of 10);
-
-    .archive__item-teaser {
-      max-height: 120px;
-    }
-
-    .archive__item-excerpt {
-      display: block;
-      font-size: $type-size-6;
-    }
-  }
-}
-
-
-/*
-   Features
-   ========================================================================== */
-
-.feature__wrapper {
-  @include clearfix();
-  margin-bottom: 2em;
-  border-bottom: 1px solid $border-color;
-}
-
-.feature__item {
-  margin-bottom: 2em;
-  font-size: 1.25rem;
-
-  @include breakpoint($small) {
-    margin-bottom: 0;
-    @include gallery(4 of 12);
-
-    .feature__item-teaser {
-      max-height: 200px;
-      overflow: hidden;
-    }
-  }
-
-  &--left {
-    @include full();
-    font-size: 1.25rem;
-
-    .archive__item-teaser {
-      margin-bottom: 2em;
-    }
-
-    @include breakpoint($small) {
-      .archive__item-teaser {
-        @include span(5 of 12);
-      }
-
-      .archive__item-body {
-        @include span(7 of 12 last);
-        @include prefix(0.5 of 12);
-        @include suffix(1 of 12);
-      }
-    }
-  }
-
-  &--right {
-    @include full();
-    font-size: 1.25rem;
-
-    .archive__item-teaser {
-      margin-bottom: 2em;
-    }
-
-    @include breakpoint($small) {
-      text-align: right;
-
-      .archive__item-teaser {
-        @include span(5 of 12 rtl);
-      }
-
-      .archive__item-body {
-        @include span(7 of 12 last rtl);
-        @include prefix(0.5 of 12);
-        @include suffix(1 of 12);
-      }
-    }
-  }
-
-  &--center {
-    @include full();
-    font-size: 1.25rem;
-
-    .archive__item-teaser {
-      margin-bottom: 2em;
-    }
-
-    @include breakpoint($small) {
-      text-align: center;
-
-      .archive__item-teaser {
-        margin: 0 auto;
-        width: span(5 of 12);
-      }
-
-      .archive__item-body {
-        margin: 0 auto;
-        width: span(7 of 12);
-      }
-    }
-  }
+/* Figure Captions */
+figcaption {
+  margin-bottom: 0.5em;
+  color: mix(#fff, $text-color, 25%);
+  font-size: $type-size-6;
 }
