@@ -14,8 +14,8 @@
   margin-bottom: 1em;
 
   @media screen and (min-width: $sidebar-screen-min-width) {
-    height: 100vh;
-    overflow-y: auto;               // Add scrollbar if the sidebar is too long
+    height: 100vh; // Full height for sidebar
+    overflow-y: auto; // Add scrollbar if the sidebar is too long
     position: fixed;
     padding-top: $masthead-height;
   }
@@ -27,7 +27,7 @@
             transition: opacity 0.2s ease-in-out;
 
     &:hover {
-      opacity: 1;
+      opacity: 1; // Maintain opacity on hover
     }
   }
 
@@ -79,9 +79,7 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 36px;
-  // set width only, for non-square avatars
-  // height: 36px;
+  width: 36px; // Set width for non-square avatars
 
   @include breakpoint($large) {
     display: block;
@@ -123,6 +121,7 @@
     margin-bottom: 10px;
   }
 }
+
 .sidebar .author__name {
   font-family: $sans-serif;
   font-size: $type-size-5;
