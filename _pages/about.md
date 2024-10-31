@@ -7,9 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-
-About Me
-------
 I am currently a master’s student at State University of Campinas, working under the supervision of [Dr. Claudemir Fideles](https://sites.google.com/unicamp.br/fideles/). My project explores PI Algebras and Algebraic Supergeometry, guided by my advisor’s work on embedding theorems as a bridge between Supertraces and Supergeometry. 
 
 Research Interests
