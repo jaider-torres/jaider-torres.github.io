@@ -14,6 +14,8 @@
   padding-left: 2em;
   padding-right: 2em;
   font-family: $sans-serif;
+  background-color: #f5f5f5; // Light background for breadcrumbs
+  border-radius: $border-radius;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.30s;
@@ -32,6 +34,7 @@
     padding: 0;
     list-style: none;
     font-size: $type-size-6;
+    color: #4b0082; // Updated font color
 
     @include breakpoint($large) {
       @include span(10 of 12 last);
@@ -48,9 +51,9 @@
 
   .current {
     font-weight: bold;
+    color: $primary-color; // Use primary color for current item
   }
 }
-
 
 /*
    Post pagination navigation links
@@ -83,12 +86,15 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: mix(#fff, $gray, 25%);
+      color: #4b0082; // Updated color for pagination links
+      background-color: #fff; // Background for better visibility
       border: 1px solid $light-gray;
-      border-radius: 0;
+      border-radius: $border-radius;
+      transition: background-color 0.3s; // Smooth transition
 
       &:hover {
-        color: $link-color-hover;
+        color: #fff;
+        background: $primary-color; // Hover effect
       }
 
       &.current {
@@ -136,7 +142,8 @@
     border-radius: $border-radius;
 
     &:hover {
-      color: $link-color-hover;
+      color: #fff;
+      background: $primary-color; // Hover effect for pager buttons
     }
 
     &:first-child {
@@ -157,16 +164,6 @@
     }
   }
 }
-
-.page__content + .pagination,
-.page__meta + .pagination,
-.page__share + .pagination,
-.page__comments + .pagination {
-  margin-top: 2em;
-  padding-top: 2em;
-  border-top: 1px solid $border-color;
-}
-
 
 /*
    Priority plus navigation
@@ -310,7 +307,6 @@
   }
 }
 
-
 /*
    Navigation list
    ========================================================================== */
@@ -329,6 +325,7 @@
 
     &:hover {
       text-decoration: underline;
+      color: $primary-color; // Hover color
     }
   }
 
@@ -353,6 +350,8 @@
   font-family: $sans-serif-narrow;
   font-size: $type-size-5;
   font-weight: bold;
+  background-color: #f5f5f5; // Added background for better visibility
+  border-radius: $border-radius; // Rounded corners for title
 }
 
 .nav__sub-title {
@@ -366,7 +365,6 @@
   border-bottom: 1px solid $border-color;
 }
 
-
 /*
    Table of contents navigation
    ========================================================================== */
@@ -374,62 +372,25 @@
 .toc {
   font-family: $sans-serif-narrow;
   color: $gray;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  background-color: #fff;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  margin-top: 1em;
+  padding-left: 2rem;
 
-  .nav__title {
-    color: #fff;
-    font-size: $type-size-6;
-    background: $primary-color;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
-  }
-}
-
-.toc__menu {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  font-size: 0.8rem;
-
-  a {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: $gray;
-    font-size: $type-size-7;
-    font-weight: bold;
-    line-height: 1.5;
-    border-bottom: 1px solid $border-color;
-    text-decoration-line: none !important;
-
-    &:hover {
-      color: #000;
-      background: $lighter-gray;
-    }
+  ul {
+    margin-bottom: 1em;
+    padding-left: 0; // Remove padding for a cleaner look
+    list-style-type: none;
   }
 
-  > li:last-child {
+  li {
+    margin: 0.25em 0;
+
     a {
-      border-bottom: none;
-    }
-  }
+      text-decoration: none;
+      color: $gray; // Updated color for links in TOC
 
-  li ul > li a {
-    padding-left: 2rem;
-    font-weight: normal;
-  }
-
-  /* hide sub sub links on small screens*/
-  li > ul li {
-    display: none;
-
-    @include breakpoint($medium) {
-      display: block;
+      &:hover {
+        color: $primary-color; // Hover color for TOC links
+      }
     }
   }
 }
