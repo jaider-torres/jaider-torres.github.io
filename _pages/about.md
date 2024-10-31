@@ -15,4 +15,4 @@ Broadly, I'm interested in algebras with polynomial identities (PI algebra) and 
 
 Contact
 ------
-Write me at [my institutional email]{j241343@dac.unicamp.br}. 
+Write me at [my institutional email](j241343@dac.unicamp.br). 
