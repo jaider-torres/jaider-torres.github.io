@@ -388,15 +388,12 @@
 .toc__menu {
   margin: 0;
   padding: 0;
-  width: 100%;
-  list-style: none;
-  font-size: 0.85rem;
 
   li {
     border-bottom: 1px solid $border-color;
 
     a {
-      padding: 0.75rem;
+      padding: 0.5rem 1rem;
       display: block;
       color: $gray;
       text-decoration: none;
