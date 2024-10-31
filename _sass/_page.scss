@@ -49,7 +49,6 @@
 } 
 
 .page__content { 
-
   h2 { 
     padding-bottom: 0.5em; 
     border-bottom: 1px solid $border-color; 
@@ -357,6 +356,24 @@
 
   a { 
     text-decoration: none; 
+    color: inherit; 
+
+    &:hover { 
+      text-decoration: underline; 
+    } 
   } 
 } 
 
+.comment__meta { 
+  color: $gray; 
+  font-size: $type-size-6; 
+} 
+
+.comment__text { 
+  margin-top: 0.5em; 
+} 
+
+.comment__reply { 
+  margin-top: 0.5em; 
+  text-align: right; 
+} 
