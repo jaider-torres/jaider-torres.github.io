@@ -11,7 +11,7 @@ body {
   margin: 0;
   padding: $masthead-height 0 0;
   padding-bottom: 9em;
-  color: $text-color; // Keep as is if you want to maintain text color
+  color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
 
@@ -97,7 +97,7 @@ blockquote {
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
-  border-left: 0.25em solid #4b0082; // Updated to your preferred color
+  border-left: 0.25em solid $primary-color;
 
   cite {
     font-style: italic;
@@ -119,7 +119,6 @@ a {
   &:hover,
   &:active {
     outline: 0;
-    color: #4b0082; // Updated to your preferred color
   }
 }
 
@@ -249,17 +248,19 @@ figcaption {
     transition: $global-transition;
 
     &:hover {
-      color: #4b0082; // Updated to your preferred color
-      border-bottom-color: #4b0082; // Updated to your preferred color
+      color: #000;
+      border-bottom-color: #000;
     }
   }
 }
+
 
 /* Fix IE9 SVG bug */
 
 svg:not(:root) {
   overflow: hidden;
 }
+
 
 /*
    Navigation lists
