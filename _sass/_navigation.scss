@@ -1,9 +1,9 @@
-/* ========================================================================== 
-   NAVIGATION 
+/* ==========================================================================
+   NAVIGATION
    ========================================================================== */
 
-/* 
-   Breadcrumb navigation links 
+/*
+   Breadcrumb navigation links
    ========================================================================== */
 
 .breadcrumbs {
@@ -51,8 +51,9 @@
   }
 }
 
-/* 
-   Post pagination navigation links 
+
+/*
+   Post pagination navigation links
    ========================================================================== */
 
 .pagination {
@@ -166,8 +167,9 @@
   border-top: 1px solid $border-color;
 }
 
-/* 
-   Priority plus navigation 
+
+/*
+   Priority plus navigation
    ========================================================================== */
 
 .greedy-nav {
@@ -305,10 +307,12 @@
         border-bottom: none;
       }
     }
+  }
 }
 
-/* 
-   Navigation list 
+
+/*
+   Navigation list
    ========================================================================== */
 
 .nav__list {
@@ -362,8 +366,9 @@
   border-bottom: 1px solid $border-color;
 }
 
-/* 
-   Table of contents navigation 
+
+/*
+   Table of contents navigation
    ========================================================================== */
 
 .toc {
@@ -388,94 +393,43 @@
 .toc__menu {
   margin: 0;
   padding: 0;
-
-  li {
-    border-bottom: 1px solid $border-color;
-
-    a {
-      padding: 0.5rem 1rem;
-      display: block;
-      color: $gray;
-      text-decoration: none;
-
-      &:hover {
-        background: $primary-color;
-        color: #fff;
-      }
-    }
-  }
-}
-
-/* 
-   Sidebar navigation 
-   ========================================================================== */
-
-.sidebar {
-  background: #f9f9f9; // Background for the sidebar
-  padding: 1em;
-  border-radius: $border-radius;
-
-  h3 {
-    font-size: $type-size-5;
-    color: #4b0082; // Heading color
-  }
-
-  ul {
-    list-style: none;
-    padding-left: 0;
-
-    li {
-      margin-bottom: 0.5em;
-
-      a {
-        color: #4b0082; // Link color
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline; // Underline on hover
-        }
-      }
-    }
-  }
-}
-
-/* 
-   Footer navigation 
-   ========================================================================== */
-
-.footer-nav {
-  background: #4b0082; // Footer background
-  color: #fff; // Footer text color
-  padding: 1em;
-  text-align: center;
+  width: 100%;
+  list-style: none;
+  font-size: 0.8rem;
 
   a {
-    color: #fff; // Link color in footer
-    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    color: $gray;
+    font-size: $type-size-7;
+    font-weight: bold;
+    line-height: 1.5;
+    border-bottom: 1px solid $border-color;
+    text-decoration-line: none !important;
 
     &:hover {
-      text-decoration: underline; // Underline on hover
+      color: #000;
+      background: $lighter-gray;
     }
   }
-}
 
-/* 
-   Mobile navigation 
-   ========================================================================== */
-
-@media screen and (max-width: $tablet) {
-  .greedy-nav {
+  > li:last-child {
     a {
-      padding: 0.5rem; // Increased padding for mobile
+      border-bottom: none;
     }
+  }
 
-    button {
-      height: 2rem; // Smaller button height for mobile
-    }
+  li ul > li a {
+    padding-left: 2rem;
+    font-weight: normal;
+  }
 
-    .hidden-links {
-      position: static; // Change positioning for mobile
-      width: 100%; // Full width for mobile
+  /* hide sub sub links on small screens*/
+  li > ul li {
+    display: none;
+
+    @include breakpoint($medium) {
+      display: block;
     }
   }
 }
