@@ -1,6 +1,10 @@
 /* ==========================================================================
    BASE ELEMENTS
    ========================================================================== */
+
+$background-color: #4b0082; // Change to your desired color (Indigo)
+$text-color: #ffffff; // White text for contrast
+
 html {
   /* sticky footer fix */
   position: relative;
@@ -14,6 +18,7 @@ body {
   color: $text-color;
   font-family: $global-font-family;
   line-height: 1.5;
+  background-color: $background-color; // Set the background color
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -254,13 +259,11 @@ figcaption {
   }
 }
 
-
 /* Fix IE9 SVG bug */
 
 svg:not(:root) {
   overflow: hidden;
 }
-
 
 /*
    Navigation lists
