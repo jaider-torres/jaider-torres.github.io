@@ -21,7 +21,8 @@ repository               : "jaider-torres/jaider-torres.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profilepic.png"
+  avatar           : ""
+  #avatar           : "profilepic.png"
   name             : "Jaider Daniel Torres"
   pronouns         : # example: "she/her"  
   # bio              : "Short biography for the left-hand sidebar"
