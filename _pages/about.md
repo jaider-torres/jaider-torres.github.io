@@ -17,20 +17,11 @@ I recently completed my master's degree at [IMECC](https://www.ime.unicamp.br/en
 
 I worked on graded algebras, their representations, and related geometric aspects. Specifically, I studied the representability of the functor of graded maps between a fixed graded algebra and twisted graded algebras (with certain signature) by a central simple algebra. I began by developing a categorical framework for graded objects and establishing its basic properties. As background, I studied the classical universal map into matrices, namely the representability of the functor of finite-dimensional representations. I then extended representability to the case of graded, possibly non-associative algebras, proving that the functor classifying families of representations is representable. By establishing a graded analogue of the classical isomorphism relating endomorphism algebras under base change, I was able to reduce the problem to a more classical setting.
 
-I then analyzed a concrete example: representations of the free graded associative algebra into twisted commutative algebras. Specializing to superalgebras gave rise to an affine superscheme that parametrizes these representations and enables explicit dimension computations via parameter counting. More explicitely, let $X = X^0 \sqcup X^1 \in Sets^{\mathbb Z_2}$, where
-$$X^0 = \{x^0_1,\dots,x^0_{m_0}\},
-\qquad
-X^1 = \{x^1_1,\dots,x^1_{m_1}\}.$$
-Take $R=\kappa\langle X^{\mathbb Z_2}\rangle$ and $V=\kappa^{p\mid q}$, with $n=p+q$. The parameter counting gives that the number of degree $0$ parameters is $E = m_0(p^2+q^2) + m_1(2pq)$,
-and the number of degree $1$ parameters is $O = m_0(2pq) + m_1(p^2+q^2)$. In this case, we obtain
-\[
-\kappa_\lambda\langle\xi\rangle
-=
-\kappa[y_1,\dots,y_E]
-\otimes
-\bigwedge_\kappa(\theta_1,\dots,\theta_O),
-\]
-where $\bigwedge_\kappa(\theta_1,\dots,\theta_O)$ denotes the Grassmann algebra of the $\kappa$-vector space with basis $\theta_1,\dots,\theta_O$.
+I then analyzed a concrete example: representations of the free graded associative algebra into twisted commutative algebras. Specializing to superalgebras gave rise to an affine superscheme that parametrizes these representations and enables explicit dimension computations via parameter counting. More explicitely, let $$X = X^0 \sqcup X^1 \in Sets^{\mathbb Z_2}$$, where
+$$X^0 = \{x^0_1,\dots,x^0_{m_0}\}, X^1 = \{x^1_1,\dots,x^1_{m_1}\}.$$
+Take $R=\kappa\langle X^{\mathbb Z_2}\rangle$ and $V=\kappa^{p\mid q}$, with $n=p+q$. The parameter counting gives that the number of degree $0$ parameters is $$E = m_0(p^2+q^2) + m_1(2pq)$$,
+and the number of degree $$1$$ parameters is $$O = m_0(2pq) + m_1(p^2+q^2)$$. In this case, we obtain that the superalgebra representing the functor of $$\mathbb Z_2$$-graded representations of  $$R$$ is $$\kappa[y_1,\dots,y_E]\otimes\bigwedge_\kappa(\theta_1,\dots,\theta_O)$$,
+where $$\bigwedge_\kappa(\theta_1,\dots,\theta_O)$$ denotes the Grassmann algebra of the $$\kappa$$-vector space with basis $$\theta_1,\dots,\theta_O$$.
 Since
 \[
 \kappa_\lambda\langle\xi\rangle
