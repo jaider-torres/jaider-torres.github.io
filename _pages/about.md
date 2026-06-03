@@ -5,7 +5,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
-
+---
 ------
 
 I am an ICTP student of the Postgraduate Diploma Program in Mathematics (for more information, [click here](https://www.ictp.it/opportunity/ictp-postgraduate-diploma-programme)). For the final project, I am working on elliptic curves under the supervision of Dr. Shubham Sinha. My main goal with this project is to introduce myself to arithmetic geometry. 
