@@ -5,9 +5,10 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
----
 
-I am an ICTP student of the Postgraduate Diploma Program in Mathematics (for mor information, [click here](https://www.ictp.it/opportunity/ictp-postgraduate-diploma-programme)). For the final project, I am working on elliptic curves. My main goal with this project is to introduce myself to arithmetic geometry. 
+------
+
+I am an ICTP student of the Postgraduate Diploma Program in Mathematics (for more information, [click here](https://www.ictp.it/opportunity/ictp-postgraduate-diploma-programme)). For the final project, I am working on elliptic curves under the supervision of Dr. Shubham Sinha. My main goal with this project is to introduce myself to arithmetic geometry. 
 
 master’s student at State University of Campinas, working under the supervision of [Dr. Claudemir Fideles](https://sites.google.com/unicamp.br/fideles/). My project explores PI Algebras and Algebraic Supergeometry, guided  by my advisor’s work on embedding theorems as a bridge between Supertraces and Supergeometry. 
 
