@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I am an ICTP student of the Postgraduate Diploma Program in Mathematics (for mor information, [click here](https://www.ictp.it/opportunity/ictp-postgraduate-diploma-programme)). Currently, I am working on the final project on elliptic curves. My main goal with this project is to introduce myself to modern topics on arithmetic geometry. 
+I am an ICTP student of the Postgraduate Diploma Program in Mathematics (for mor information, [click here](https://www.ictp.it/opportunity/ictp-postgraduate-diploma-programme)). For the final project, I am working on elliptic curves. My main goal with this project is to introduce myself to arithmetic geometry. 
 
-master’s student at State University of Campinas, working under the supervision of [Dr. Claudemir Fideles](https://sites.google.com/unicamp.br/fideles/). My project explores PI Algebras and Algebraic Supergeometry, guided by my advisor’s work on embedding theorems as a bridge between Supertraces and Supergeometry. 
+# master’s student at State University of Campinas, working under the supervision of [Dr. Claudemir Fideles](https://sites.google.com/unicamp.br/fideles/). My project explores PI Algebras and Algebraic Supergeometry, guided # by my advisor’s work on embedding theorems as a bridge between Supertraces and Supergeometry. 
 
 Research Interests
 ------
