@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a master’s student at State University of Campinas, working under the supervision of [Dr. Claudemir Fideles](https://sites.google.com/unicamp.br/fideles/). My project explores PI Algebras and Algebraic Supergeometry, guided by my advisor’s work on embedding theorems as a bridge between Supertraces and Supergeometry. 
+I am an ICTP student of the Postgraduate Diploma Program in Mathematics (for mor information, [click here](https://www.ictp.it/opportunity/ictp-postgraduate-diploma-programme)). Currently, I am working on the final project on elliptic curves. My main goal with this project is to introduce myself to modern topics on arithmetic geometry. 
+
+master’s student at State University of Campinas, working under the supervision of [Dr. Claudemir Fideles](https://sites.google.com/unicamp.br/fideles/). My project explores PI Algebras and Algebraic Supergeometry, guided by my advisor’s work on embedding theorems as a bridge between Supertraces and Supergeometry. 
 
 Research Interests
 ------
@@ -15,4 +17,4 @@ Broadly, I'm interested in algebras with polynomial identities (PI algebra) and 
 
 Contact
 ------
-Write me at [my institutional email](j241343@dac.unicamp.br). 
+Write me at [my institutional email](jtorres@ictp.it). 
