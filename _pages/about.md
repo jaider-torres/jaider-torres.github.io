@@ -10,9 +10,11 @@ redirect_from:
 
 I am an ICTP student of the Postgraduate Diploma Program in Mathematics (for more information, [click here](https://www.ictp.it/opportunity/ictp-postgraduate-diploma-programme)). For the final project, I am working on elliptic curves under the supervision of [Dr. Shubham Sinha](https://users.ictp.it/~ssinha1/). My main goal with this project is to introduce myself to arithmetic geometry. 
 
-For my Bachelor's degree final I studied Riemann surfaces. The approach was introductory and largely analytic, but I was surprised and motivated by these magic formulas regarding algebraic curves! A further extension of this work introduced me to sheaf cohomology, something I found amazing. This work gave me enough inspiration to pursue a career in mathematical research in algebraic geometry, altough not exclusively that since I also find representation theory to be really interesting. 
+For my Bachelor's degree final I studied Riemann surfaces. The approach was introductory and largely analytic, but I was surprised and motivated by these magic formulas regarding algebraic curves! A further extension of this work introduced me to sheaf cohomology, something I found amazing. This work gave me enough inspiration to pursue a career in mathematical research in algebraic geometry, altough not exclusively since I also find representation theory to be really interesting. 
 
-I recently completed my master's degree at [IMECC](https://www.ime.unicamp.br/en), UNICAMP, under the supervision of [Dr. Claudemir Fideles](https://sites.google.com/unicamp.br/fideles/). My focus changed almost radically for my master's project. My project explores PI Algebras and Algebraic Supergeometry, guided  by my advisor’s work on embedding theorems as a bridge between Supertraces and Supergeometry. 
+I recently completed my master's degree at [IMECC](https://www.ime.unicamp.br/en), UNICAMP, under the supervision of [Dr. Claudemir Fideles](https://sites.google.com/unicamp.br/fideles/). My focus changed almost radically for my master's project. Roughly, I studied algebras with polynomial identities (PI-algebras) within universal algebra, the functor of representation of associative algebras (and some interesting graded non-associative generalizations of this), and geometric spaces modeled in varieties of algebras.
+
+My project explores PI Algebras and Algebraic Supergeometry, guided  by my advisor’s work on embedding theorems as a bridge between Supertraces and Supergeometry. 
 
 # Research Interests
 ------
