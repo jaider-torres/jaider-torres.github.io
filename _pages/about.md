@@ -31,8 +31,8 @@ which is somehow beautiful. However, I still haven't provided many example of th
 
 # Research Interests
 ------
-Broadly, I'm interested in algebras with polynomial identities (PI algebra) and its relation to non-commutative geometry and algebraic geometry. I am particularly interested in how these concepts relate to advanced mathematical structures such as Supergeometry and Higher Category Theory. My academic journey is driven by a deep curiosity about the intersections of algebra, geometry, and their broader implications.
+Broadly, I'm interested algebraic geometry and representation. I got recently dragged by arithmetic geometry, representation of $$p$$-adic groups, and the Langlands correspondence. I have some hope some graded methods may be of some use in this context.
 
 Contact
 ------
-Write me at [my institutional email](jtorres@ictp.it). 
+Write me at email [jtorres@ictp.it](jtorres@ictp.it) (if this doesn't work, use the left panel). 
