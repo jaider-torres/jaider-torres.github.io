@@ -19,6 +19,7 @@ I worked on graded algebras, their representations, and related geometric aspect
 
 I then analyzed a concrete example: representations of the free graded associative algebra into twisted commutative algebras. Specializing to superalgebras gave rise to an affine superscheme that parametrizes these representations and enables explicit dimension computations via parameter counting. Building on current ideas of sheaves of graded PI-algebras, an interesting adjunction appeared, namely the category of (pre)sheaves of graded algebras over a topological space forms a reflexive subcategory of the category of graded (pre)sheaves of algebras over (pre)sheaves of modules, with respect to a suitable functor. This looks like
 $$ \left((P)Sh_{A\mathrm{-Alg}} (X) \right)^G_{(P)Sh_{A\mathrm{-Mod}}(X),For} \substack{\overset {(-)_B}{\longrightarrow} \\ \underset{\iota}{\hookleftarrow}} \left( (P)Sh_{G\mathrm{-Var}(B)}(X)\right)^G_{(P)Sh_{A\mathrm{-Mod}}(X),For}$$
+
 which is somehow beautiful.
 
 # Research Interests
