@@ -24,7 +24,8 @@ and the number of degree $$1$$ parameters is $$O = m_0(2pq) + m_1(p^2+q^2)$$. In
 This superalgebra corresponds to the affine superscheme $$\mathbb Spec\ \kappa[y_1,\dots,y_E]\otimes\bigwedge_\kappa(\theta_1,\dots,\theta_O)=\mathbb A_\kappa^{E\mid O}=(\mathbb A_\kappa^{E},\mathcal O)$$. This ultimately implies that $$\mathbb A_\kappa^{E\mid O}$$ parametrizes the $$A$$-representations of $$R$$. $${\tiny \substack{\text{And the world would be so perfect if this holds in more general algebraic settings. This made me believe on polynomial geometry... because why not.} \text{But building on this very same ideas, one can replicate the same and possible get to something like functional geometry. However, this is just bladdering.}}$$
 
 Building on current ideas of sheaves of graded PI-algebras, an interesting adjunction appeared, namely the category of (pre)sheaves of graded algebras over a topological space forms a reflexive subcategory of the category of graded (pre)sheaves of algebras over (pre)sheaves of modules, with respect to a suitable functor. This looks like
-$$A$$
+
+$$\left((P)Sh_{A\mathrm{-Alg}} (X) \right)^G_{(P)Sh_{A\mathrm{-Mod}}(X),For} \substack{\overset {(-)_B}{\longrightarrow} \\ \underset{\iota}{\hookleftarrow}} \left((P)Sh_{G\mathrm{-Var}(B)}(X)\right)^G_{(P)Sh_{A\mathrm{-Mod}}(X),For}$$
 
 which is somehow beautiful.
 
