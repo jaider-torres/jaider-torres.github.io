@@ -28,7 +28,7 @@ Building on current ideas of sheaves of graded PI-algebras, an interesting adjun
 
 $$\left((P)Sh_{A\mathrm{-Alg}} (X) \right)^G_{(P)Sh_{A\mathrm{-Mod}}(X),For} \substack{\overset {(-)_B}{\longrightarrow} \\ \underset{\iota}{\hookleftarrow}} \left((P)Sh_{G\mathrm{-Var}(B)}(X)\right)^G_{(P)Sh_{A\mathrm{-Mod}}(X),For}$$
 
-which is somehow beautiful.
+which is somehow beautiful. However, I still haven't provided many example of these constructions.
 
 # Research Interests
 ------
