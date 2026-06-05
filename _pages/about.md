@@ -34,4 +34,4 @@ Broadly, I am interested in algebraic geometry and representation theory. More r
 
 Contact
 ------
-Write me at email [jtorres@ictp.it](jtorres@ictp.it) (if this doesn't work, use the left panel). 
+Write me at [jtorres@ictp.it](jtorres@ictp.it) (if this doesn't work, use the left panel). 
